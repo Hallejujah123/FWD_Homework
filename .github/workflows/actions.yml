@@ -14,6 +14,7 @@ jobs:
         run: |
           cd my-app
           npm ci
+          npx playwright install
           npm run build
           npm run format
           npm run lint
@@ -25,3 +26,4 @@ jobs:
         with:
           branch: pages 
           folder: my-app/build
+          repository-name: Hallejujah123/Hallejujah123.github.io
